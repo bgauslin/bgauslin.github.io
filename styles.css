@@ -1,0 +1,17 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+:where(*) {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  font-family: monospace;
+  grid: 1fr / 1fr;
+  margin: 0;
+  min-block-size: 100dvh;
+  place-content: center;
+}
