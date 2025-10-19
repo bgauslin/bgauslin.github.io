@@ -13,5 +13,5 @@ body {
   grid: 1fr / 1fr;
   margin: 0;
   min-block-size: 100dvh;
-  place-content: center;
+  place-items: center;
 }
