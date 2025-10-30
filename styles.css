@@ -18,14 +18,37 @@ body {
   place-items: center;
 }
 
+div {
+  white-space: pre;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:focus-visible {
+    color: var(--link-focus-color);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--link-focus-color);
+    }
+  }
+}
+
 :root {
   --background: white;
   --color: #111;
+  --link-color: DodgerBlue;
+  --link-focus-color: OrangeRed;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #111;
     --color: white;
+    --link-color: CornflowerBlue;
+    --link-focus-color: DarkOrange;
   }
 }
